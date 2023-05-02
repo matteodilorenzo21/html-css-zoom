@@ -5,6 +5,51 @@
     box-sizing: border-box;
 }
 
+/* UTILS */
 body {
-    color: red;
+    font-family: lato;
+    color: #fff;
+    background-color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.border {
+    border: 2px dashed #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+    height: 40px;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-actions {
+    height: 100%;
+    gap: 10px;   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.view-button {
+    font-size: 12px;
+    background-color: #4A4A4A;
+    padding: 3px 6px;
+    border-radius: 5px;
+    line-height: 40px;
 }
