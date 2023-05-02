@@ -9,10 +9,12 @@
 body {
     font-family: lato;
     color: #fff;
+    background-color: #000;
+    padding-top: 40px;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -45,8 +47,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     z-index: 1;
+    margin-bottom: 60px;
 }
 
 .header-actions {
@@ -65,9 +68,41 @@ header {
     line-height: 40px;
 }
 
+/* MAIN */
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 120px);
     background-color: #000;
+    overflow-y: auto;
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: calc(100% / 7);
+    padding: 5px 3px;
+}
+
+.card-img img {
+    max-width: 100%;
+    display: block;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img .card-mic-check {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.6;
+    font-size: 10px;
 }
 
 /* FOOTER */
@@ -104,8 +139,12 @@ footer {
     flex-grow: 1;
 }
 
+li > a {
+    font-size: 12px;
+}
+
 .nav-icon {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .exit-area {
